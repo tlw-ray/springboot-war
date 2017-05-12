@@ -6,4 +6,4 @@
 
 3. pom.xml中设定\<packaging\>war\</packaging\>。
 
->注意: 这种项目仅仅部署到Web容器是有效的，无法从本地用mvn:tomcat来运行查看效果。如果需要本地运行调试需要恢复2,3步后，以Springboot方式运行。
+>注意: 由于tomcat6是基于java5的，因而springboot项目无法用mvn tomcat:run来运行查看效果,只能够以mvn tomcat7:run。如果需要本地运行调试需要恢复2,3步后，以Springboot方式运行。
